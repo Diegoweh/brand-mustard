@@ -156,13 +156,13 @@ export default function Home() {
                 href="#drop"
                 className="inline-flex items-center justify-center rounded-full border border-accent bg-accent px-7 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-black hover:-translate-y-0.5 hover:bg-[#e0b24b]"
               >
-                Shop The Drop
+                Shop Now
               </a>
               <a
                 href="#about"
                 className="inline-flex items-center justify-center rounded-full border border-white/25 bg-black/20 px-7 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-foreground hover:-translate-y-0.5 hover:border-accent hover:text-accent"
               >
-                Read The Story
+                View Drop
               </a>
             </div>
           </motion.div>
