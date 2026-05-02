@@ -252,28 +252,23 @@ export default function Home() {
                   href={product.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group overflow-hidden border border-white/12 bg-[rgba(11,10,8,0.72)] backdrop-blur-sm"
+                  className="group relative block aspect-[4/5] overflow-hidden"
                 >
-                  <div className="relative aspect-[4/5] overflow-hidden">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      sizes="(min-width: 1280px) 30vw, (min-width: 640px) 45vw, 100vw"
-                      className="object-cover transition duration-500 group-hover:scale-[1.04]"
-                    />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_40%,rgba(8,8,8,0.74)_100%)]" />
-                  </div>
-                  <div className="flex items-center justify-between gap-4 px-5 py-4">
-                    <div>
-                      <p className="font-[family-name:var(--font-display)] text-2xl uppercase tracking-[0.08em] text-foreground">
-                        {product.name}
-                      </p>
-                      <p className="text-xs uppercase tracking-[0.26em] text-foreground/58">
-                        TeePublic
-                      </p>
-                    </div>
-                    <span className="text-sm uppercase tracking-[0.22em] text-accent transition group-hover:translate-x-1">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    sizes="(min-width: 1280px) 30vw, (min-width: 640px) 45vw, 100vw"
+                    className="object-contain transition duration-500 group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-x-0 top-1/2 flex -translate-y-1/2 flex-col items-center justify-center gap-1 bg-black/65 px-4 py-4 opacity-0 transition duration-300 group-hover:opacity-100">
+                    <p className="font-[family-name:var(--font-display)] text-2xl uppercase tracking-[0.08em] text-foreground">
+                      {product.name}
+                    </p>
+                    <p className="text-xs uppercase tracking-[0.26em] text-foreground/70">
+                      TeePublic
+                    </p>
+                    <span className="mt-1 text-sm uppercase tracking-[0.22em] text-accent">
                       View
                     </span>
                   </div>
